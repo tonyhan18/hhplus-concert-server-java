@@ -122,6 +122,8 @@ TDD와 클린 레이어드 아키텍처 구조를 기반으로 서버를 설계�
 
 ## 1. 대기열 발급 요청
 
+![Untitled diagram-2025-04-01-140523](https://github.com/user-attachments/assets/050bcf4e-ebd2-49c7-92da-551eeaa99103)
+
 ```mermaid
 sequenceDiagram
     autonumber
@@ -153,8 +155,8 @@ sequenceDiagram
         AuthServer-->>Frontend: 인증 실패
         Frontend-->>User: 사용자 없음 알림
         deactivate Frontend
-    end
 
+    end
 ```
 
 ### Description
@@ -166,7 +168,9 @@ sequenceDiagram
 4. 대기열 정보를 사용자에게 반환.
 
 
+
 ## 2. 대기열 조회 요청
+![Untitled diagram-2025-04-01-140614](https://github.com/user-attachments/assets/7264651f-dbac-43f2-afa4-21d3c453979e)
 
 ```mermaid
 sequenceDiagram
@@ -219,6 +223,7 @@ sequenceDiagram
 
 
 ## 3. 콘서트 예약 가능 회차 조회
+![Untitled diagram-2025-04-01-140641](https://github.com/user-attachments/assets/5beab85b-432f-4f88-a5d2-5418cd7fa433)
 
 ```mermaid
 sequenceDiagram
@@ -275,6 +280,7 @@ sequenceDiagram
 
 
 ## 4. 콘서트 회차 좌석 조회
+![Untitled diagram-2025-04-01-140708](https://github.com/user-attachments/assets/98e97ec6-e99d-4f0e-9ff4-c4e29ddeb8c2)
 
 ```mermaid
 sequenceDiagram
@@ -330,6 +336,7 @@ sequenceDiagram
 
 
 ## 5. 콘서트 회차의 좌석 예약
+![Untitled diagram-2025-04-01-140731](https://github.com/user-attachments/assets/6fe24aa1-ca17-4369-b553-a1ced218c074)
 
 ```mermaid
 sequenceDiagram
@@ -393,6 +400,7 @@ sequenceDiagram
 - 좌석 임시 예약은 다른 사용자가 예약할 수 없도록 잠금 처리됩니다.
 
 ## 6. 결제
+![Untitled diagram-2025-04-01-140755](https://github.com/user-attachments/assets/a67f5e8b-c979-409d-864f-ed1e752210d0)
 
 ```mermaid
 sequenceDiagram
@@ -511,6 +519,8 @@ sequenceDiagram
 - 결제 완료 정보를 사용자에게 반환합니다.
 
 ## 7. 잔액 충전
+![Untitled diagram-2025-04-01-140852](https://github.com/user-attachments/assets/39d4598a-a8b2-43f5-a9b8-b8c9ce1b3aa0)
+
 
 ```mermaid
 sequenceDiagram
@@ -564,6 +574,7 @@ sequenceDiagram
   - 충전 금액이 유효한 경우, 사용자의 잔액을 충전하고, 총 잔액 정보를 반환합니다.
 
 ## 8. 잔액 조회
+![Untitled diagram-2025-04-01-140917](https://github.com/user-attachments/assets/004cda0a-2425-4e92-84c1-b26fbc24fec3)
 
 ```mermaid
 sequenceDiagram
@@ -619,6 +630,7 @@ sequenceDiagram
 ## 9. 대기열 활성/만료 스케줄링
 
 `대기열 토큰 활성`
+![Untitled diagram-2025-04-01-140944](https://github.com/user-attachments/assets/d162c754-fc14-4528-aa82-c0269040b3ef)
 
 ```mermaid
 sequenceDiagram
@@ -655,6 +667,8 @@ sequenceDiagram
 ```
 
 `대기열 활성 토큰 만료`
+![Untitled diagram-2025-04-01-141010](https://github.com/user-attachments/assets/622259cf-e421-4919-b766-23db138bb1a7)
+
 ```mermaid
 sequenceDiagram
     autonumber
