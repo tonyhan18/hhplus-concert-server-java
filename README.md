@@ -726,9 +726,8 @@ sequenceDiagram
         end
     else 만료 없음
         Concert-->>Scheduler: 없음
-        deactivate Concert
-    end
 
+    end
 ```
 
 ### Description
