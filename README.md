@@ -1,9 +1,11 @@
 # 🎤 콘서트 예약 서비스 🎤
 
+## 요구사항
+
 <details>
 <summary><b>✅ 과제설명</b></summary>
 
-- **`콘서트 예약 서비스`**를 구현해 봅니다.
+- **콘서트 예약 서비스**를 구현해 봅니다.
 - 대기열 시스템을 구축하고, 예약 서비스는 작업가능한 사용자만 수행할 수 있도록 해야합니다.
 - **사용자는 좌석예약 시에 미리 충전한 잔액을 이용합니다.**
 - 좌석 예약 요청시에, 결제가 이루어지지 않더라도 일정 시간동안 다른 사용자가 해당 좌석에 접근할 수 없도록 합니다.
@@ -17,7 +19,7 @@ TDD와 클린 레이어드 아키텍처 구조를 기반으로 서버를 설계�
 </details>
 
 <details>
-<summary><b>🤔 요구사항</b></summary>
+<summary><b>🤔 필요사항</b></summary>
 
 - 아래 5가지 API 를 구현합니다.
     - 사용자 토큰 발급 API
@@ -34,7 +36,8 @@ TDD와 클린 레이어드 아키텍처 구조를 기반으로 서버를 설계�
 
 <details>
 <summary><b>✏️ API Specs</b></summary>
-1️⃣ **`주요` 사용자 대기열 토큰 기능**
+
+**1️⃣ `주요` 사용자 대기열 토큰 기능**
 
 - 서비스를 이용할 토큰을 발급받는 API를 작성합니다.
 - 토큰은 사용자의 UUID 와 해당 사용자의 대기열을 관리할 수 있는 정보 ( 대기 순서 or 잔여 시간 등 ) 를 포함합니다.
@@ -52,7 +55,7 @@ TDD와 클린 레이어드 아키텍처 구조를 기반으로 서버를 설계�
 > 좌석 정보는 1 ~ 50 까지의 좌석번호로 관리됩니다.
 > 
 
-3️⃣ **`주요` 좌석 예약 요청 API**
+**3️⃣ `주요` 좌석 예약 요청 API**
 
 - 좌석 예약과 동시에 해당 좌석은 그 사용자에게 약 5분간 임시 배정됩니다. ( 시간은 정책에 따라 자율적으로 정의합니다. )
 - 날짜와 좌석 정보를 입력받아 좌석을 예약 처리하는 API 를 작성합니다.
@@ -117,18 +120,13 @@ TDD와 클린 레이어드 아키텍처 구조를 기반으로 서버를 설계�
 
 </details>
 
-<details>
-<summary><b>📝 시퀀스 다이어그램</b></summary>
+### [📝 Milestone](https://github.com/users/tonyhan18/projects/3/views/1?layout=roadmap)
 
-### 2. [Sequnece Diagram]()
+### [📝 Sequnece Diagram](https://github.com/tonyhan18/hhplus-concert-server-java/blob/main/docs/SequenceDiagram.md)
 
-</details>
 
-<details>
-<summary><b>📝 ERD 다이어그램</b></summary>
+### [📝 ERD](https://github.com/tonyhan18/hhplus-concert-server-java/blob/main/docs/Erd.md)
 
-### 3. [ERD]()
-</details>
 
 #### Running Docker Containers
 
