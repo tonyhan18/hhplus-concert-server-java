@@ -124,8 +124,9 @@ TDD와 클린 레이어드 아키텍처 구조를 기반으로 서버를 설계�
 
 ### [📝 Sequnece Diagram](https://github.com/tonyhan18/hhplus-concert-server-java/blob/main/docs/SequenceDiagram.md)
 
-
 ### [📝 ERD](https://github.com/tonyhan18/hhplus-concert-server-java/blob/main/docs/Erd.md)
+
+### [📝 API Spec](https://github.com/tonyhan18/hhplus-concert-server-java/blob/step4/docs/ApiSpec.md)
 
 
 #### Running Docker Containers
