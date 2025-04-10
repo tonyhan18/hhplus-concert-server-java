@@ -140,7 +140,7 @@
 
 ### Request
 - **Method**: POST
-- **URL**: `/api/v1/users/{userId}/pointaccount/recharge`
+- **URL**: `/api/v1/users/{userId}/Points/recharge`
 - **Headers**:
   - `Content-Type`: application/json
   - `Queue-Token`: String (대기열 토큰)
@@ -178,7 +178,7 @@
 
 ### Request
 - **Method**: `GET`
-- **URL**: `/api/v1/users/{userId}/pointaccount`
+- **URL**: `/api/v1/users/{userId}/Points`
 - **Headers**:
   - `Content-Type`: application/json
   - `Queue-Token`: String (대기열 토큰)
