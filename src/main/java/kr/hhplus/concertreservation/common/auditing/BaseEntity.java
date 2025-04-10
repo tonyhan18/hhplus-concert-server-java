@@ -32,7 +32,7 @@ public class BaseEntity {
      */
     @CreatedDate
     @Column(name = "created_at", updatable = false)
-    private LocalDateTime createdAt;
+    protected LocalDateTime createdAt;
 
     /**
      * updatedAt 필드는 엔티티가 마지막으로 수정된 시간을 나타냅니다.
@@ -40,6 +40,6 @@ public class BaseEntity {
      */
     @LastModifiedDate
     @Column(name = "updated_at")
-    private LocalDateTime updatedAt;
+    protected LocalDateTime updatedAt;
 }
 
