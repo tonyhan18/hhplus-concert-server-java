@@ -2,7 +2,7 @@ package kr.hhplus.concertreservation.concert.presentation.dto.response;
 
 import java.util.List;
 
-public record GetConcertroundsResponse(
-        List<ConcertroundResponse> rounds
+public record GetConcertSessionsResponse(
+        List<ConcertSessionResponse> rounds
 ) {
 }

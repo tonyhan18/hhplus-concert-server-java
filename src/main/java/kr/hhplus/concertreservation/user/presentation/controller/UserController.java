@@ -8,30 +8,30 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import kr.hhplus.concertreservation.user.presentation.dto.request.ChargeUserpointaccountRequest;
-import kr.hhplus.concertreservation.user.presentation.dto.response.ChargeUserpointaccountResponse;
-import kr.hhplus.concertreservation.user.presentation.dto.response.GetUserpointaccountResponse;
+import kr.hhplus.concertreservation.user.presentation.dto.request.ChargeUserPointsRequest;
+import kr.hhplus.concertreservation.user.presentation.dto.response.ChargeUserPointsResponse;
+import kr.hhplus.concertreservation.user.presentation.dto.response.GetUserPointsResponse;
 
 
 @RestController
 @RequestMapping("/api/v1/users")
 public class UserController {
     // 잔액 충전
-    @PostMapping("/{userId}/pointaccount/charge")
-    public ResponseEntity<ChargeUserpointaccountResponse> chargepointaccount(
+    @PostMapping("/{userId}/points/charge")
+    public ResponseEntity<ChargeUserPointsResponse> chargePoints(
             @PathVariable Long userId,
-            @RequestBody ChargeUserpointaccountRequest request
+            @RequestBody ChargeUserPointsRequest request
     ) {
-        ChargeUserpointaccountResponse response = new ChargeUserpointaccountResponse(1000);
+        ChargeUserPointsResponse response = new ChargeUserPointsResponse(1000);
         return ResponseEntity.ok(response);
     }
 
     // 잔액 조회
-    @GetMapping("/{userId}/pointaccount")
-    public ResponseEntity<GetUserpointaccountResponse> getpointaccount(
+    @GetMapping("/{userId}/Points")
+    public ResponseEntity<GetUserPointsResponse> getPoints(
             @PathVariable Long userId
     ) {
-        GetUserpointaccountResponse response = new GetUserpointaccountResponse(1000);
+        GetUserPointsResponse response = new GetUserPointsResponse(1000);
         return ResponseEntity.ok(response);
     }
 }
