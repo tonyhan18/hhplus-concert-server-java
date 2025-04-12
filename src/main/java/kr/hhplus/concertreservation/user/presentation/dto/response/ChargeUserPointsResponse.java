@@ -1,6 +1,6 @@
 package kr.hhplus.concertreservation.user.presentation.dto.response;
 
-public record GetUserpointaccountResponse(
+public record ChargeUserPointsResponse(
         long totalAmount
 ) {
 }
