@@ -5,7 +5,7 @@ config:
 ---
 erDiagram
     User ||--o{ QueueToken : owns
-    User ||--|| PointAccount : has
+    User ||--|| Points : has
     User ||--o{ SeatReservation : makes
     User ||--o{ Payment : makes
     SeatReservation ||--|| Payment : paid_by
@@ -17,7 +17,7 @@ erDiagram
         string name "사용자 이름"
         string email "사용자 이메일"
     }
-    PointAccount {
+    Points {
         string userId PK "사용자 ID (User.id), 1:1 연결"
         int balance "보유 포인트"
         datetime lastUpdated "마지막 업데이트 시각"
@@ -81,8 +81,8 @@ erDiagram
 - 분산 시스템에서 중복 방지
 - 프론트와 백엔드 통신 시 일관성 유지
 
-### userId와 PointAccount 관계
-완벽한 1:1 관계로 만들기 위해 PointAccount에는 userId를 PK로 넣음
+### userId와 Points 관계
+완벽한 1:1 관계로 만들기 위해 Points에는 userId를 PK로 넣음
 
 ### QueueToken
 대기열이 하나뿐이기 때문에 Token의 Id를 PK로 사용
